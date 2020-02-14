@@ -11,6 +11,7 @@ class M_home extends CI_model {
 	{
 		$this->db->select();
 		$this->db->from('tbl_family');
+		$this->db->where('publish',1);
 		if($id){
 			$this->db->where('id',$id);
 		}
