@@ -6,6 +6,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="<?php echo base_url('asset/css/bootstrap.min.css')?>">
+<link rel="stylesheet" href="<?php echo base_url('asset/custom.css')?>">
 <link rel="stylesheet" href="<?php echo base_url('asset/fa/css/all.css')?>">
 
 </head>
@@ -64,8 +65,8 @@
                     <div class="card mb-4 shadow-sm"> 
                         <img 
                             class='bd-placeholder-img card-img-top' 
-                            src="<?=$d['image_sm']; ?>" 
-                            onerror="this.src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png';
+                            src="<?=$d['image']; ?>" 
+                            onerror="this.src='asset/img/github-logo.png';
                         "/>
                         <div class="card-body"> 
                             <p class="card-text">
