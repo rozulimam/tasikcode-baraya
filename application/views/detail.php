@@ -1,13 +1,5 @@
 <?php foreach ($family as $d) { ?>
-<div class="row">
-	<div class="col-md-12">
-		<img 
-            class='bd-placeholder-img card-img-top' 
-            src="<?=$d['image_lg']; ?>" 
-            onerror="this.src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png';
-        "/>
-        <hr>
-	</div>
+<div class="row"> 
 	<div class="col-md-12">
 		<table class="table table-borderless table-sm">
 			<tr>
