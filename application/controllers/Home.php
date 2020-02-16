@@ -9,10 +9,16 @@ class Home extends CI_Controller {
 	}
 
 	public function index()
-	{
-		$data['family'] = $this->card();  
-		$data['gform']  = "https://forms.gle/EvtGoZHScckNUk9MA";  
-		$data['desc']   = "Adalah kumpulan pemersatu dan tidak bercerai berai dikala menghadapi suatu perbedaan serta senang menjalin silaturahmi";  
+	{ 
+		$data['gform']  	= "https://forms.gle/EvtGoZHScckNUk9MA";
+
+		$data['about']   	= "Adalah kumpulan pemersatu dan tidak bercerai berai dikala menghadapi suatu perbedaan serta senang menjalin silaturahmi";  
+
+
+		$data['meta_desc']  = "Hallo coders semuanya, kami adalah para coder enthusiast yang berasal dari Tasikmalaya saat ini sedang mengumpulkan data keahlian para coder, engineer, database administrator, system administrator, IT enthusiast  yang berasal dari Tasikmalaya,  tujuan kami mengumpulkan ini untuk kebutuhan skill mapping untuk komunitas yang sedang kami rintis kembali yaitu TasikCode,  diharapkan dengan adanya data tersebut dapat terbuka kesempatan di masa depan untuk kita saling berkolaborasi satu sama lain, selain agar terjalin ikatan silaturahmi yang erat antar sesama barayaTasikmalaya.";
+
+		
+		$data['family'] 	= $this->card(); 
 		$this->load->view('home',$data);
 	}
 

@@ -4,7 +4,7 @@
 <title>Baraya Tasik Code</title>
 
 <meta charset="utf-8">
-<meta name="description" content="">
+<meta name="description" content="<?=$meta_desc?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="<?php echo base_url('asset/plugins/bootstrap/css/bootstrap.min.css')?>">
 <link rel="stylesheet" href="<?php echo base_url('asset/plugins/font-awesome/css/all.css')?>">
@@ -19,7 +19,7 @@
                 <div class="col-sm-8 col-md-7 py-4">
                     <h4 class="text-white">Baraya</h4>
                     <p class="text-muted">
-                    	<?=$desc?>
+                    	<?=$about?>
                     </p>
                 </div>
                 <div class="col-sm-4 offset-md-1 py-4">
