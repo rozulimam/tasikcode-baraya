@@ -11,6 +11,7 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$data['family'] = $this->card();  
+		$data['gform']  = "https://forms.gle/EvtGoZHScckNUk9MA";  
 		$data['desc']   = "Adalah kumpulan pemersatu dan tidak bercerai berai dikala menghadapi suatu perbedaan serta senang menjalin silaturahmi";  
 		$this->load->view('home',$data);
 	}
