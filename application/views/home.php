@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Baraya</title>
+<title>Baraya Tasik Code</title>
 
 <meta charset="utf-8">
+<meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="<?php echo base_url('asset/css/bootstrap.min.css')?>">
-<link rel="stylesheet" href="<?php echo base_url('asset/custom.css')?>">
-<link rel="stylesheet" href="<?php echo base_url('asset/fa/css/all.css')?>">
+<link rel="stylesheet" href="<?php echo base_url('asset/plugins/bootstrap/css/bootstrap.min.css')?>">
+<link rel="stylesheet" href="<?php echo base_url('asset/plugins/font-awesome/css/all.css')?>">
+<link rel="stylesheet" href="<?php echo base_url('asset/css/custom.css')?>">
 
 </head>
 <body>
@@ -49,7 +50,12 @@
         <div class="container"> 
             <div class="row"> 
                 <div class="col-sm-12">
-                	<div class="row justify-content-end">
+                	<div class="row justify-content-between">
+                        <div class="col-sm-4"> 
+                              <a href="<?=$gform?>" class="btn btn-outline-secondary" target="_blank">
+                                  <i class="fa fa-user-plus"></i> Saya ingin memperkenalkan diri
+                              </a> 
+                        </div>
                 		<div class="col-sm-4">
                 			<div class="input-group mb-3">
 							  <input type="text" class="form-control" placeholder="Siapa yang anda cari...">
@@ -59,6 +65,7 @@
 							</div>
                 		</div>
                 	</div> 
+                    <hr>
                 </div>
             	<?php foreach ($family as $d){ ?>
                 <div class="col-lg-3 col-md-6 col-sm-12">
@@ -115,9 +122,10 @@
   </div>
 </div> 
 
-<script src="<?php echo base_url('asset/js/jquery-3.4.1.min.js')?>"></script>
-<script src="<?php echo base_url('asset/js/bootstrap.min.js')?>"></script>
-<script src="<?php echo base_url('asset/js/popper.min.js')?>"></script> 
-<script src="<?php echo base_url('asset/custom.js')?>"></script> 
+<script src="<?php echo base_url('asset/plugins/jquery/jquery-3.4.1.min.js')?>"></script>
+<script src="<?php echo base_url('asset/plugins/bootstrap/js/bootstrap.min.js')?>"></script>
+<script src="<?php echo base_url('asset/plugins/bootstrap/js/popper.min.js')?>"></script> 
+<script src="<?php echo base_url('asset/plugins/sweetalert/sweetalert2.all.min.js')?>"></script> 
+<script src="<?php echo base_url('asset/js/custom.js')?>"></script> 
 </body>
 </html> 
