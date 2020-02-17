@@ -15,6 +15,7 @@ class M_home extends CI_model {
 		if($id){
 			$this->db->where('id',$id);
 		}
+		$this->db->order_by('id','DESC');
 		$query = $this->db->get();
 		return $query->result();
 	}
