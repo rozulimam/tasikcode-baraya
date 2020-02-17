@@ -68,7 +68,7 @@
                     <hr>
                 </div>
             	<?php foreach ($family as $d){ ?>
-                <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="col-lg-3 col-md-6 col-sm-12 members">
                     <div class="card mb-4 shadow-sm"> 
                         <img 
                             class='bd-placeholder-img card-img-top' 

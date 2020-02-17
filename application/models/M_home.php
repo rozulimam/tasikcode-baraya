@@ -18,4 +18,10 @@ class M_home extends CI_model {
 		$query = $this->db->get();
 		return $query->result();
 	}
+	
+	public function searchMember($keyword)
+	{
+		$this->db->like('name', $keyword);
+		return $this->db->get('tbl_family')->result_array();
+	}
 }
