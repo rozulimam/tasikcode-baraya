@@ -1,3 +1,12 @@
 *{
 	font-family: "Space Mono", monospace;
 }
+.social {
+    text-decoration: none;
+}
+.social:link, .social:visited {
+    color: #6C757D;
+}
+.social:hover {
+    color: #6C757D;
+}
