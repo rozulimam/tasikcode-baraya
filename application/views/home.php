@@ -59,7 +59,7 @@
                         </div>
                 		<div class="col-sm-4">
                 			<div class="input-group mb-3">
-							  <input type="text" class="form-control" placeholder="Siapa yang anda cari...">
+							  <input type="text" class="form-control" id="keyword"placeholder="Siapa yang anda cari...">
 							  <div class="input-group-append">
 							    <button class="btn btn-outline-secondary" id="btn_search">Cari</button>
 							  </div>
