@@ -52,12 +52,12 @@
             <div class="row"> 
                 <div class="col-sm-12">
                 	<div class="row justify-content-between">
-                        <div class="col-sm-4"> 
-                              <a href="<?=$gform?>" class="btn btn-outline-secondary" target="_blank">
+                        <div class="col-md-6 col-lg-4 mb-2"> 
+                              <a href="<?=$gform?>" class="btn btn-block btn-outline-secondary" target="_blank">
                                   <i class="fa fa-user-plus"></i> Saya ingin memperkenalkan diri
                               </a> 
                         </div>
-                		<div class="col-sm-4">
+                		<div class="col-md-4">
                 			<div class="input-group mb-3">
 							  <input type="text" class="form-control" placeholder="Siapa yang anda cari...">
 							  <div class="input-group-append">
