@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="<?php echo base_url('asset/plugins/bootstrap/css/bootstrap.min.css')?>">
 <link rel="stylesheet" href="<?php echo base_url('asset/plugins/font-awesome/css/all.css')?>">
 <link rel="stylesheet" href="<?php echo base_url('asset/css/custom.css')?>">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
