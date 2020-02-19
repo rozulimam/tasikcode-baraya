@@ -74,8 +74,9 @@
                         <img 
                             class='bd-placeholder-img card-img-top' 
                             src="<?=$d['image']; ?>" 
-                            onerror="this.src='asset/img/github-logo.png';
-                        "/>
+                            onerror="this.src='asset/img/github-logo.png';"
+                            alt="Image Of <?=$d['name'];?>"                            
+                            />
                         <div class="card-body"> 
                             <p class="card-text">
                             	<center>
