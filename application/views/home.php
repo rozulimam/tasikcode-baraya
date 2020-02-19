@@ -7,10 +7,10 @@
     <meta charset="utf-8">
     <meta name="description" content="<?= $meta_desc ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo base_url('asset/plugins/bootstrap/css/bootstrap.min.css') ?>">
-    <link rel="stylesheet" href="<?php echo base_url('asset/plugins/font-awesome/css/all.css') ?>">
-    <link rel="stylesheet" href="<?php echo base_url('asset/css/custom.css') ?>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('asset/css/custom.css') ?>">
 
 </head>
 
@@ -119,10 +119,10 @@
         </div>
     </div>
 
-    <script src="<?php echo base_url('asset/plugins/jquery/jquery-3.4.1.min.js') ?>"></script>
-    <script src="<?php echo base_url('asset/plugins/bootstrap/js/bootstrap.min.js') ?>"></script>
-    <script src="<?php echo base_url('asset/plugins/bootstrap/js/popper.min.js') ?>"></script>
-    <script src="<?php echo base_url('asset/plugins/sweetalert/sweetalert2.all.min.js') ?>"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/esm/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.js"></script>
     <script src="<?php echo base_url('asset/js/custom.js') ?>"></script>
 </body>
 
