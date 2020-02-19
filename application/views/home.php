@@ -52,14 +52,14 @@
             <div class="row"> 
                 <div class="col-sm-12">
                 	<div class="row justify-content-between">
-                        <div class="col-md-6 col-lg-4 mb-2"> 
+                        <div class="col-md-12 col-lg-5 mb-2"> 
                               <a href="<?=$gform?>" class="btn btn-block btn-outline-secondary" target="_blank">
                                   <i class="fa fa-user-plus"></i> Saya ingin memperkenalkan diri
                               </a> 
                         </div>
-                		<div class="col-md-4">
+                		<div class="cold-md-12 col-lg-4">
                 			<div class="input-group mb-3">
-							  <input type="text" class="form-control" placeholder="Siapa yang anda cari...">
+							  <input type="text" class="form-control" placeholder="Siapa yang anda cari..." id="keyword">
 							  <div class="input-group-append">
 							    <button class="btn btn-outline-secondary" id="btn_search">Cari</button>
 							  </div>
@@ -68,6 +68,7 @@
                 	</div> 
                     <hr>
                 </div>
+                <div class="intro"></div>
             	<?php foreach ($family as $d){ ?>
                 <div class="col-lg-3 col-md-6 col-sm-12 members">
                     <div class="card mb-4 shadow-sm"> 
