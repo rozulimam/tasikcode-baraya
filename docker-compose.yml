@@ -1,6 +1,6 @@
 version: '3'
 networks:
-  forwarding_network:
+  tasikcode_network:
     driver: bridge
 
 services:
@@ -8,15 +8,15 @@ services:
     build:
       context: ./
       dockerfile: docker/database.dockerfile
-    image: forwarding_mysql
+    image: tasikcode_mysql
     networks:
-      - forwarding_network
-    container_name: forwarding_mysql
+      - tasikcode_network
+    container_name: tasikcode_mysql
     environment:
         MYSQL_ROOT_PASSWORD: "@@@udanup"
-        MYSQL_DATABASE: forwarding_db
+        MYSQL_DATABASE: tasikcode_db
     volumes:
-      - /opt/docker_forwarding_mysql_data:/var/lib/mysql
+      - /opt/docker_tasikcode_mysql_data:/var/lib/mysql
     ports:
       - "3303:3306"
     restart: always
@@ -25,10 +25,10 @@ services:
     build:
       context: ./
       dockerfile: docker/app.dockerfile
-    image: forwarding_app
+    image: tasikcode_app
     networks:
-      - forwarding_network
-    container_name: forwarding_app
+      - tasikcode_network
+    container_name: tasikcode_app
     volumes:
       - ./:/var/www
     depends_on:
@@ -39,30 +39,14 @@ services:
     build:
       context: ./
       dockerfile: docker/web.dockerfile
-    image: forwarding_web
+    image: tasikcode_web
     networks:
-      - forwarding_network
-    container_name: forwarding_web
+      - tasikcode_network
+    container_name: tasikcode_web
     volumes:
       - ./:/var/www
     ports:
       - "3003:80"
     depends_on:
       - app
-    restart: always
-
-  cron:
-    build:
-      context: ./
-      dockerfile: docker/cron.dockerfile
-    image: forwarding_cron
-    networks:
-      - forwarding_network
-    container_name: forwarding_cron
-    depends_on:
-      - app
-    volumes:
-      - ./:/var/www 
-    networks:
-      - forwarding_network
     restart: always
