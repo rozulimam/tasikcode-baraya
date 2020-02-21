@@ -61,7 +61,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" id="keyword" placeholder="Siapa yang anda cari...">
+                                    <input type="text" class="form-control" placeholder="Siapa yang anda cari..." id="keyword">
                                     <div class="input-group-append">
                                         <button class="btn btn-outline-secondary" id="btn_search">Cari</button>
                                     </div>
@@ -70,7 +70,10 @@
                         </div>
                         <hr>
                     </div>
-                    <?php foreach ($family as $d) { ?>
+                </div>
+
+                <div class="row content">
+                    <?php foreach ($family as $d) : ?>
                         <div class="col-lg-3 col-md-6 col-sm-12 members">
                             <div class="card mb-4 shadow-sm">
                                 <img class='bd-placeholder-img card-img-top' src="<?= $d['image']; ?>" onerror="this.src='asset/img/github-logo.png';" alt="Image Of <?= $d['name']; ?>" />
@@ -87,7 +90,7 @@
                                 </div>
                             </div>
                         </div>
-                    <?php } ?>
+                    <?php endforeach; ?>
                 </div>
 
             </div>
