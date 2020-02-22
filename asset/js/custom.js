@@ -122,7 +122,7 @@ $(document).scroll(function(){
 					hasTouchTheLimit = true;
 				} else {
 					$.each(result, function(i, data) {
-						$('.intro').parent().append(`
+						$('.content').append(`
 						<div class="col-lg-3 col-md-6 col-sm-12 members">
 							<div class="card mb-4 shadow-sm"> 
 								<img class='bd-placeholder-img card-img-top' src="`+ data.link_git +`.png" onerror="this.src='asset/img/github-logo.png';"/>
