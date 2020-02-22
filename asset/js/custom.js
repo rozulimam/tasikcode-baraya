@@ -17,7 +17,7 @@ $(document).on('click', '#btn_search', function(e) {
 					$('.intro').after(`
 					<div class="col-lg-3 col-md-6 col-sm-12 members">
 						<div class="card mb-4 shadow-sm"> 
-							<img class='bd-placeholder-img card-img-top' src="asset/img/`+ data.link_img +`.png" onerror="this.src='asset/img/github-logo.png';"/>
+							<img class='bd-placeholder-img card-img-top' src="`+ data.link_git +`.png" onerror="this.src='asset/img/github-logo.png';"/>
 							<div class="card-body"> 
 								<p class="card-text">
 									<center>
