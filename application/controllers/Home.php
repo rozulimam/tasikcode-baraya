@@ -66,4 +66,17 @@ class Home extends CI_Controller {
 		$query = $this->m_home->searchMember($keyword);
 		echo json_encode($query);
 	}
+
+	public function page()
+	{
+		if($this->input->method() != "post"){
+			exit;
+		}
+
+		$page = $this->input->post('page');
+		$offset = ($page - 1) * M_home::PERPAGE;
+		echo json_encode(
+			$this->m_home->get_family(null, $offset)
+		);
+	}
 }

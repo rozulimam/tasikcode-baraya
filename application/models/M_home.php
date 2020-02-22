@@ -3,11 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_home extends CI_model {
 	
+	const PERPAGE = 12;
+
 	public function __construct(){
 		parent::__construct();  
 	}
 
-	public function get_family($id = null)
+	public function get_family($id = null, $start = 0)
 	{
 		$this->db->select();
 		$this->db->from('tbl_family');
@@ -16,6 +18,8 @@ class M_home extends CI_model {
 			$this->db->where('id',$id);
 		}
 		$this->db->order_by('id','DESC');
+		$this->db->offset($start);
+		$this->db->limit(M_home::PERPAGE);
 		$query = $this->db->get();
 		return $query->result();
 	}
