@@ -1,0 +1,14 @@
+.double-input .form-control {
+    width: 50%;
+    border-right-width: 0px;
+}
+.double-input .form-control:focus {
+    border-right-width: 1px;
+}
+
+select.no-style, input.no-style{
+    padding: 2px;
+    margin: 0px;
+    border: none;
+    border: 1px solid #e7eaec; 
+}
