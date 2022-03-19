@@ -25,11 +25,11 @@
 			<tr>
 				<td colspan='3'>
 					<?php if($d['link_fb'] != "") {?>
-						<a href="<?=$d['link_fb']?>" class='social'><i class="fa fa-facebook-square " style="font-size:36px"></i></a>
+						<a href="<?=$d['link_fb']?>" class='social'><i class="fab fa-facebook " style="font-size:36px"></i></a>
 					<?php } if($d['link_git'] != "") { ?>
-					<a href="<?=$d['link_git']?>" class='social'><i class="fa fa-github-square" style="font-size:36px"></i></a>
+					<a href="<?=$d['link_git']?>" class='social'><i class="fab fa-github" style="font-size:36px"></i></a>
 					<?php } if($d['link_in'] != "") { ?>
-					<a href="<?=$d['link_in']?>" class='social'><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
+					<a href="<?=$d['link_in']?>" class='social'><i class="fab fa-linkedin" style="font-size:36px"></i></a>
 					<?php } ?>
 				</td>
 			</tr>
