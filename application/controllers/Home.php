@@ -41,7 +41,7 @@ class Home extends CI_Controller {
 	function insert_regist(){
  
 		$this->form_validation->set_rules('name','Nama','required|trim');     
-		$this->form_validation->set_rules('email','Email','required|trim|valid_email');     
+		$this->form_validation->set_rules('email','Email','required|trim|valid_email|is_unique[tbl_family.email]');     
 		$this->form_validation->set_rules('title','Bekerja Sebagai','required|trim');     
 		$this->form_validation->set_rules('skill','Keahlian','required|trim');         
 		
