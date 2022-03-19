@@ -46,10 +46,14 @@ $(document).ready(function(){
 
 						if(obj.status == 'failed'){  
 							swal('Informasi', obj.message,'warning');
-						}else if(obj.status == 'success'){ 
-							swal('Good job!',obj.message,'success',function(){
-                                location.reload();
-                            }); 
+						}else if(obj.status == 'success'){   
+							swal({
+								title: 'Good job!',
+								text:obj.message,
+								type: 'success',
+							}).then(function (result) { 
+								location.reload(); 
+							})
 						}else if(obj.status == 'warning'){ 
 							swal('Informasi',obj.message,'warning');
 						}
